@@ -1,0 +1,16 @@
+{
+  "name": "scripts",
+  "version": "1.0.0",
+  "repository": "https://github.com/EugenEistrachKC/scripts.git",
+  "author": "Eugen Eistrach <eugen.eistrach@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "node-persist": "^3.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.30.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "prettier": "2.3.2"
+  }
+}
