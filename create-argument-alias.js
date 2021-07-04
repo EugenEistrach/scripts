@@ -21,7 +21,7 @@ const createAlias = async () => {
   const [key, value] = await utils.args();
   const overwritten = await utils.getItem(key);
 
-  await utils.addItem(key, value);
+  await utils.addItem(key.trim(), value);
   console.log(`${overwritten ? 'Updated' : 'Created'} alias ${key}`);
 };
 

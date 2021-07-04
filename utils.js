@@ -1,6 +1,6 @@
 const storage = require('node-persist');
 
-async function args() {
+function args() {
   return process.argv.slice(2);
 }
 
@@ -16,7 +16,7 @@ async function addItem(key, value) {
 
 const expand = async (text) => {
   try {
-    const item = await getItem(text);
+    const item = await getItem(text.trim());
     return item || text;
   } catch (e) {
     console.log(e);
